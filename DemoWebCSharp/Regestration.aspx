@@ -180,11 +180,15 @@
 </div>
 
 <asp:Label ID="lblMessage" runat="server" CssClass="text-success mt-3"></asp:Label>
+<asp:Label ID="lblResult" runat="server" CssClass="d-block mt-3"></asp:Label>
+<asp:Label ID="Label1" runat="server"></asp:Label>
+
 
 </div>
 </div>
 </div>
 
+<%--
 <script runat="server">
 protected void btnSubmit_Click(object sender, EventArgs e)
 {
@@ -197,6 +201,9 @@ protected void ValidateGender(object source, ServerValidateEventArgs args)
     args.IsValid = rbMale.Checked || rbFemale.Checked;
 }
 </script>
+--%>
+
+ 
 
 
 

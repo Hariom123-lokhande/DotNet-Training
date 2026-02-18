@@ -218,6 +218,7 @@
     <Compile Include="Regestration.aspx.designer.cs">
       <DependentUpon>Regestration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="RegistrationService.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

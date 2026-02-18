@@ -34,5 +34,7 @@ namespace DemoWebCSharp {
         protected global::System.Web.UI.WebControls.Button btnSubmit;
 
         protected global::System.Web.UI.WebControls.Label lblMessage;
+        protected global::System.Web.UI.WebControls.Label lblResult;
+
     }
 }
