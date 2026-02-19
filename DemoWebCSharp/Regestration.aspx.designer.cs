@@ -35,6 +35,8 @@ namespace DemoWebCSharp {
 
         protected global::System.Web.UI.WebControls.Label lblMessage;
         protected global::System.Web.UI.WebControls.Label lblResult;
+        protected global::System.Web.UI.WebControls.Label lblOop;
+        protected global::System.Web.UI.WebControls.Label lblStudentInfo;
 
     }
 }

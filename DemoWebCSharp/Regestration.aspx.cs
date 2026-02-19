@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Drawing.Printing;
 using System.Web.Services.Description;
 using System.Web.UI.WebControls;
+using DemoWebCSharp.Utility;
 
 namespace DemoWebCSharp
 {
@@ -10,12 +12,48 @@ namespace DemoWebCSharp
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
             if (!IsPostBack)
             {
-                GetData();
+                //GetData();
+                ShowAllConcept();
+
             }
         }
+
+
+        
+            public void ShowAllConcept()
+            {
+            string output = "";
+
+            // 1️⃣ Class + Constructor
+            SimpleClass simple = new SimpleClass();
+            output += "Class & Constructor → " + simple.Message() + "<br/>";
+
+            // 2️⃣ Encapsulation
+            EncapsulationExample enc = new EncapsulationExample("Hariom");
+            output += "Encapsulation → " + enc.Name + "<br/>";
+
+            // 3️⃣ Inheritance 
+            Child child = new Child();
+            output += "Inheritance (Parent Method) → " + child.ParentMessage() + "<br/>";
+            output += "Inheritance (Child Method) → " + child.ChildMessage() + "<br/>";
+
+            // 4️⃣ Overriding (Runtime Polymorphism)
+            Animal animal = new Dog();
+            output += "Overriding → " + animal.Speak() + "<br/>";
+
+            // 5️⃣ Overloading (Compile-time Polymorphism)
+            Calculator calc = new Calculator();
+            output += "Overloading (2 params) → " + calc.Add(5, 3) + "<br/>";
+            output += "Overloading (3 params) → " + calc.Add(5, 3, 2) + "<br/>";
+
+
+
+            lblStudentInfo.Text = output;
+            }
+
 
 
         protected void rblVaccinated_SelectedIndexChanged(object sender, EventArgs e)

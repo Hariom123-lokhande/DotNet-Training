@@ -183,6 +183,11 @@
 <asp:Label ID="lblResult" runat="server" CssClass="d-block mt-3"></asp:Label>
 <asp:Label ID="Label1" runat="server"></asp:Label>
 
+<asp:Label ID="lblStudentInfo" runat="server" Text="Test Label"></asp:Label>
+
+
+
+
 
 </div>
 </div>
@@ -203,7 +208,7 @@ protected void ValidateGender(object source, ServerValidateEventArgs args)
 </script>
 --%>
 
- 
+
 
 
 
