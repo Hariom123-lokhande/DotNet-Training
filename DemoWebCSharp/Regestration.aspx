@@ -189,24 +189,10 @@
 
 
 
-</div>
-</div>
-</div>
 
-<%--
-<script runat="server">
-protected void btnSubmit_Click(object sender, EventArgs e)
-{
-    if (Page.IsValid)
-        lblMessage.Text = "Registration Successful!";
-}
-
-protected void ValidateGender(object source, ServerValidateEventArgs args)
-{
-    args.IsValid = rbMale.Checked || rbFemale.Checked;
-}
-</script>
---%>
+</div>
+</div>
+</div>
 
 
 

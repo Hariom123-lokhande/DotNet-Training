@@ -7,7 +7,7 @@ namespace DemoWebCSharp.Utility
     {
         public string message;
 
-        
+
         public SimpleClass()//construcror without parameter
         {
             message = "This is a simple class (Constructor Called)";
